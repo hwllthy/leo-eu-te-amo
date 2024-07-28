@@ -1,26 +1,39 @@
+/* Fundo da página com gradiente de cores */
 body {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #f0f0f0;
+    background: linear-gradient(45deg, #ff6f61, #ffb74d, #ffeb3b, #81c784, #64b5f6, #9575cd, #f06292);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
     font-family: Arial, sans-serif;
 }
 
+/* Animação para o gradiente */
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Estilo do contêiner */
 .container {
     text-align: center;
-    background-color: #030303;
+    background-color: #ffffff; /* Branco */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Cor do título */
 h1 {
-    color: #7b0dbf;
+    color: #8910e6; /* Cor específica */
 }
 
+/* Cor do parágrafo */
 p {
-    color: #333;
+    color: #000000; /* Preto */
     font-size: 18px;
 }
